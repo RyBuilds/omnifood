@@ -1,122 +1,3 @@
-/* 
---- 01 TYPOGRAPHY 
-FONT SIZES (px)
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
-
-FONT WEIGHTS
-default: 400
-medium: 500
-semi-bold: 600
-bold: 700
-
-LINE HEIGHTS
-default: 1
-h1 default: 1.05
-paragraph: 1.6
-
---- 02 COLOURS
-PRIMARY: #e67
-
-TINTS:
-#fdf0f1 01
-#fdf2e9 01
-
-SHADES: 
-#d65c6b
-
-ACCENTS: 
-
-GREYS:
-#333 h1
-#555 body
-
---- 05 SHADOWS
-
---- 06 BORDER RADIUS
-default: 9px
-
---- 07 WHITESPACE
-SPACING SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  /* ROOT FONT SIZE: 16PX */
-  /* DESIRED FONT SIZE: 10PX */
-  /* 10 / 16 = 0.625 = 62.5% */
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
-/*  */
-/*  */
-/*  */
-/* GENERAL REUSABLE COMPONENTS */
-/*  */
-/*  */
-/*  */
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  /* ON ORIGINAL STATE */
-  transition: all 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67;
-  color: #fff;
-}
-
-.btn--full:hover,
-.btn--full:active {
-  background-color: #d65c6b;
-}
-
-.btn--outline:link,
-.btn--outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn--outline:hover,
-.btn--outline:active {
-  background-color: #fdf0f1;
-  /* TRICK FOR BORDER INSIDE */
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
-}
-
 /*  */
 /*  */
 /*  */
@@ -199,8 +80,7 @@ body {
 }
 
 .hero {
-  max-width: 120rem;
-  /* CHANGE rem TO 130rem */
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 3.2rem;
   display: grid;
@@ -251,4 +131,70 @@ body {
 
 .hero-img {
   width: 100%;
+}
+
+/*  */
+/*  */
+/*  */
+/* HOW IT WORKS SECTION */
+/*  */
+/*  */
+/*  */
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-text-box {
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+  margin-top: 0;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-img-box::before {
+  width: 60%;
+  /* height: 60%; */
+  /* 60% of parents width */
+  padding-bottom: 60%;
+  background-color: #fdf0f1;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fce0e4;
+  z-index: -1;
+}
+
+.step-img {
+  width: 35%;
 }
