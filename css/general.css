@@ -66,6 +66,9 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* only works if there is nothing positioned 
+  absolutely in relation to body */
+  overflow-x: hidden;
 }
 
 /*  */
