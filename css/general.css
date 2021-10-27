@@ -59,6 +59,8 @@ html {
   /* DESIRED FONT SIZE: 10PX */
   /* 10 / 16 = 0.625 = 62.5% */
   font-size: 62.5%;
+  /* DOESNT WORK ON SAFARI OR EDGE */
+  /* scroll-behavior: smooth; */
 }
 
 body {
