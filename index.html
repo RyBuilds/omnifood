@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- ESSENTIAL FOR RESPONSIVE DESIGN -->
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+      <!--
+      ESSENTIAL
+      FOR
+      RESPONSIVE
+      DESIGN
+      --
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +41,7 @@
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Never cook again</title>
   </head>
   <body>
     <header class="header">
@@ -86,11 +100,27 @@
             </div>
           </div>
           <div class="hero-image-box">
-            <img
-              src="img/hero.png"
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+
+              <img
+                src="img/hero-min.png"
+                class="hero-img"
+                alt="A woman who is enjoying her meal, fresh meals in storage containers, and fresh meals served in bowls"
+              />
+              />
+            </picture>
+            <!-- <img
+              src="img/hero-min.png"
               class="hero-img"
               alt="A woman who is enjoying her meal, fresh meals in storage containers, and fresh meals served in bowls"
-            />
+            /> -->
+            <!-- <img
+              src="img/hero.webp"
+              class="hero-img"
+              alt="A woman who is enjoying her meal, fresh meals in storage containers, and fresh meals served in bowls"
+            /> -->
           </div>
         </div>
       </section>
