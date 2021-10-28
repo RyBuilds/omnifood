@@ -20,14 +20,14 @@ LETTER SPACING
 0.75px
 
 --- 02 COLOURS
-PRIMARY: #e67
+PRIMARY: #e67e22
 
 TINTS:
 #fdf0f1 01
 #fdf2e9 01
 
 SHADES: 
-#d65c6b
+#cf711f
 
 ACCENTS: 
 
@@ -155,7 +155,7 @@ body {
   display: block;
   font-size: 1.6rem;
   font-weight: 500;
-  color: #d65c6b;
+  color: #cf711f;
   text-transform: uppercase;
   letter-spacing: 0.75px;
   margin-bottom: 1.6rem;
@@ -180,13 +180,13 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67;
+  background-color: #e67e22;
   color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #d65c6b;
+  background-color: #cf711f;
 }
 
 .btn--outline:link,
@@ -203,7 +203,7 @@ body {
 }
 
 .btn--form {
-  background-color: #471f24;
+  background-color: #45260a;
   color: #fdf0f1;
   align-self: end;
   padding: 1.2rem;
@@ -217,7 +217,7 @@ body {
 .link:link,
 .link:visited {
   display: inline-block;
-  color: #e67;
+  color: #e67e22;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding: 2px;
@@ -226,7 +226,7 @@ body {
 
 .link:hover,
 .link:active {
-  color: #d65c6b;
+  color: #cf711f;
   border-bottom: 1px solid transparent;
 }
 
@@ -246,16 +246,16 @@ body {
 }
 
 .list-icon {
-  color: #d65c6b;
+  color: #cf711f;
   height: 3rem;
   width: 3rem;
 }
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #e67; */
+  /* outline: 4px dotted #e67e22; */
   /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgba(238, 102, 118, 0.5);
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
